@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pigmy Agent System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/briney-style.css?v=2.0" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <i class="fas fa-piggy-bank me-2"></i>Pigmy Agent System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fas fa-chart-pie me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user me-1"></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html">
+                            <i class="fas fa-file-alt me-1"></i>Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <i class="fas fa-cog me-1"></i>Settings
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-out-alt me-1"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-content">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+            <h1><i class="fas fa-hand-wave me-2"></i>Welcome to Pigmy Agent System</h1>
+            <p>Manage your clients, track collections, and grow your business efficiently</p>
+        </div>
+
+        <!-- Today Overview Statistics -->
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="home-summary-card">
+                    <div class="summary-card-content">
+                        <div class="round-icon-container">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="large-stat-number">1,247</div>
+                        <div class="stat-description-label">Total Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="home-summary-card">
+                    <div class="summary-card-content">
+                        <div class="round-icon-container money-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="large-stat-number">₹45,678</div>
+                        <div class="stat-description-label">Today's Collection</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="home-summary-card">
+                    <div class="summary-card-content">
+                        <div class="round-icon-container pending-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="large-stat-number">23</div>
+                        <div class="stat-description-label">Pending Collections</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="home-summary-card">
+                    <div class="summary-card-content">
+                        <div class="round-icon-container target-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="large-stat-number">₹12.5L</div>
+                        <div class="stat-description-label">Monthly Target</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Performance Overview -->
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="daily-performance-panel">
+                    <div class="performance-header-section">
+                        <h3><i class="fas fa-calendar-day me-2"></i>Today's Performance</h3>
+                    </div>
+                    <div class="performance-content-area">
+                        <div class="performance-metric-row">
+                            <div class="metric-item">
+                                <div class="metric-icon-circle visits-metric">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <div class="metric-details">
+                                    <div class="metric-value">24</div>
+                                    <div class="metric-label">Client Visits</div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon-circle collections-metric">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                </div>
+                                <div class="metric-details">
+                                    <div class="metric-value">18</div>
+                                    <div class="metric-label">Successful Collections</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="performance-metric-row">
+                            <div class="metric-item">
+                                <div class="metric-icon-circle new-clients-metric">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <div class="metric-details">
+                                    <div class="metric-value">3</div>
+                                    <div class="metric-label">New Registrations</div>
+                                </div>
+                            </div>
+                            <div class="metric-item">
+                                <div class="metric-icon-circle efficiency-metric">
+                                    <i class="fas fa-percentage"></i>
+                                </div>
+                                <div class="metric-details">
+                                    <div class="metric-value">87%</div>
+                                    <div class="metric-label">Success Rate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="urgent-tasks-panel">
+                    <div class="urgent-header-section">
+                        <h3><i class="fas fa-exclamation-circle me-2"></i>Urgent Tasks</h3>
+                    </div>
+                    <div class="urgent-tasks-list">
+                        <div class="single-urgent-task high-priority">
+                            <div class="task-priority-indicator"></div>
+                            <div class="task-content">
+                                <div class="task-title">5 Overdue Payments</div>
+                                <div class="task-description">Includes Ramesh Gupta (₹2,500), Anjali Verma (₹1,800)</div>
+                            </div>
+                            <div class="task-action-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="single-urgent-task medium-priority">
+                            <div class="task-priority-indicator"></div>
+                            <div class="task-content">
+                                <div class="task-title">12 Payment Reminders</div>
+                                <div class="task-description">Due tomorrow: Suresh Patel, Kavita Sharma, Deepak Kumar</div>
+                            </div>
+                            <div class="task-action-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                        <div class="single-urgent-task low-priority">
+                            <div class="task-priority-indicator"></div>
+                            <div class="task-content">
+                                <div class="task-title">3 New Applications</div>
+                                <div class="task-description">Pending verification: Nisha Singh, Arjun Mishra, Pooja Jain</div>
+                            </div>
+                            <div class="task-action-button">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Primary Action Buttons Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="main-actions-panel">
+                    <div class="actions-header-section">
+                        <h3><i class="fas fa-bolt me-2"></i>Quick Actions</h3>
+                    </div>
+                    <div class="action-buttons-grid">
+                        <a href="#" class="main-action-button client-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">Add New Client</div>
+                                <div class="action-subtitle">Register new member</div>
+                            </div>
+                        </a>
+                        <a href="#" class="main-action-button collection-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">Record Payment</div>
+                                <div class="action-subtitle">Log collection amount</div>
+                            </div>
+                        </a>
+                        <a href="#" class="main-action-button report-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">Generate Report</div>
+                                <div class="action-subtitle">Create summary</div>
+                            </div>
+                        </a>
+                        <a href="dashboard.html" class="main-action-button analytics-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">View Analytics</div>
+                                <div class="action-subtitle">Dashboard insights</div>
+                            </div>
+                        </a>
+                        <a href="#" class="main-action-button reminder-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">Send Reminders</div>
+                                <div class="action-subtitle">Payment notifications</div>
+                            </div>
+                        </a>
+                        <a href="#" class="main-action-button search-action">
+                            <div class="action-icon-holder">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="action-text-content">
+                                <div class="action-title">Search Client</div>
+                                <div class="action-subtitle">Find member records</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Schedule and Recent Activity -->
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="todays-schedule-panel">
+                    <div class="schedule-header-section">
+                        <h3><i class="fas fa-calendar-check me-2"></i>Today's Schedule</h3>
+                    </div>
+                    <div class="schedule-items-list">
+                        <div class="single-schedule-item morning-task">
+                            <div class="schedule-time-badge">9:00 AM</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">Visit Rajesh Mehta</div>
+                                <div class="schedule-location">Address: Shivaji Nagar, Collection: ₹1,200</div>
+                            </div>
+                            <div class="schedule-status-indicator pending-visit"></div>
+                        </div>
+                        <div class="single-schedule-item afternoon-task">
+                            <div class="schedule-time-badge">2:00 PM</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">Meet Sunita Devi</div>
+                                <div class="schedule-location">Address: Gandhi Road, New Registration</div>
+                            </div>
+                            <div class="schedule-status-indicator pending-visit"></div>
+                        </div>
+                        <div class="single-schedule-item evening-task">
+                            <div class="schedule-time-badge">5:30 PM</div>
+                            <div class="schedule-content">
+                                <div class="schedule-title">Call Deepak Kumar</div>
+                                <div class="schedule-location">Phone: Payment reminder for ₹800</div>
+                            </div>
+                            <div class="schedule-status-indicator pending-call"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="recent-activity-panel">
+                    <div class="activity-header-section">
+                        <h3><i class="fas fa-history me-2"></i>Recent Activity</h3>
+                    </div>
+                    <div class="activity-items-list">
+                        <div class="single-activity-item payment-received">
+                            <div class="activity-icon-circle success-activity">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Mohan Sharma paid ₹600</div>
+                                <div class="activity-time">2 hours ago • Regular payment</div>
+                            </div>
+                        </div>
+                        <div class="single-activity-item new-client">
+                            <div class="activity-icon-circle info-activity">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Kavita Jain registered</div>
+                                <div class="activity-time">4 hours ago • New member</div>
+                            </div>
+                        </div>
+                        <div class="single-activity-item overdue-payment">
+                            <div class="activity-icon-circle warning-activity">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Ravi Gupta payment overdue</div>
+                                <div class="activity-time">1 day ago • ₹450 pending</div>
+                            </div>
+                        </div>
+                        <div class="single-activity-item reminder-sent">
+                            <div class="activity-icon-circle neutral-activity">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="activity-content">
+                                <div class="activity-title">Reminder sent to Anita Singh</div>
+                                <div class="activity-time">2 days ago • SMS notification</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekly Summary and Top Clients -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="weekly-summary-panel">
+                    <div class="summary-header-section">
+                        <h3><i class="fas fa-chart-bar me-2"></i>This Week Summary</h3>
+                    </div>
+                    <div class="weekly-stats-grid">
+                        <div class="weekly-stat-item collections-stat">
+                            <div class="stat-icon-container">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="stat-numbers">
+                                <div class="stat-amount">₹1,24,500</div>
+                                <div class="stat-label">Total Collections</div>
+                            </div>
+                        </div>
+                        <div class="weekly-stat-item visits-stat">
+                            <div class="stat-icon-container">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <div class="stat-numbers">
+                                <div class="stat-amount">156</div>
+                                <div class="stat-label">Client Visits</div>
+                            </div>
+                        </div>
+                        <div class="weekly-stat-item new-members-stat">
+                            <div class="stat-icon-container">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="stat-numbers">
+                                <div class="stat-amount">12</div>
+                                <div class="stat-label">New Members</div>
+                            </div>
+                        </div>
+                        <div class="weekly-stat-item efficiency-stat">
+                            <div class="stat-icon-container">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-numbers">
+                                <div class="stat-amount">94%</div>
+                                <div class="stat-label">Success Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="top-clients-panel">
+                    <div class="clients-header-section">
+                        <h3><i class="fas fa-crown me-2"></i>Top Clients This Month</h3>
+                    </div>
+                    <div class="top-clients-list">
+                        <div class="single-client-item first-place">
+                            <div class="client-rank-number">1</div>
+                            <div class="client-profile-info">
+                                <div class="client-name">Madhuri Dixit Sharma</div>
+                                <div class="client-details">Regular • 24 payments</div>
+                            </div>
+                            <div class="client-amount-badge gold-tier">₹18,600</div>
+                        </div>
+                        <div class="single-client-item second-place">
+                            <div class="client-rank-number">2</div>
+                            <div class="client-profile-info">
+                                <div class="client-name">Anil Kumar Joshi</div>
+                                <div class="client-details">Premium • 22 payments</div>
+                            </div>
+                            <div class="client-amount-badge silver-tier">₹16,400</div>
+                        </div>
+                        <div class="single-client-item third-place">
+                            <div class="client-rank-number">3</div>
+                            <div class="client-profile-info">
+                                <div class="client-name">Geeta Rani Patel</div>
+                                <div class="client-details">Gold • 20 payments</div>
+                            </div>
+                            <div class="client-amount-badge bronze-tier">₹14,800</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

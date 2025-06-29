@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Pigmy Agent System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/briney-style.css?v=2.0" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <i class="fas fa-piggy-bank me-2"></i>Pigmy Agent System
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">
+                            <i class="fas fa-chart-pie me-1"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fas fa-user me-1"></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports.html">
+                            <i class="fas fa-file-alt me-1"></i>Reports
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <i class="fas fa-cog me-1"></i>Settings
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-sign-out-alt me-1"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main-content">
+        <h1 class="page-title"><i class="fas fa-chart-pie me-2"></i>Dashboard Analytics</h1>
+        
+        <!-- Main Statistics Cards -->
+        <div class="row mb-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="number-display-card">
+                    <div class="card-content-area">
+                        <div class="circular-icon-holder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="big-number-text">1,247</div>
+                        <div class="description-text">Active Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="number-display-card">
+                    <div class="card-content-area">
+                        <div class="circular-icon-holder">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="big-number-text">₹3.2L</div>
+                        <div class="description-text">Monthly Collection</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="number-display-card">
+                    <div class="card-content-area">
+                        <div class="circular-icon-holder">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="big-number-text">23</div>
+                        <div class="description-text">Pending Payments</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="number-display-card">
+                    <div class="card-content-area">
+                        <div class="circular-icon-holder">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="big-number-text">92.5%</div>
+                        <div class="description-text">Collection Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tracking Section -->
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="progress-tracking-card">
+                    <div class="card-header-section">
+                        <h3><i class="fas fa-target me-2"></i>Monthly Collection Target</h3>
+                    </div>
+                    <div class="progress-content-area">
+                        <div class="target-amount-display">
+                            <span class="collected-amount">₹3.2L</span> / <span class="target-amount">₹5L</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 64%;"></div>
+                        </div>
+                        <div class="progress-percentage-text">64% Completed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="progress-tracking-card">
+                    <div class="card-header-section">
+                        <h3><i class="fas fa-chart-line me-2"></i>Client Growth Target</h3>
+                    </div>
+                    <div class="progress-content-area">
+                        <div class="target-amount-display">
+                            <span class="collected-amount">1,247</span> / <span class="target-amount">1,500</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill client-growth-bar" style="width: 83%;"></div>
+                        </div>
+                        <div class="progress-percentage-text">83% Achieved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions Panel -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="quick-actions-panel">
+                    <div class="panel-header-section">
+                        <h3><i class="fas fa-bolt me-2"></i>Quick Actions</h3>
+                    </div>
+                    <div class="action-buttons-row">
+                        <a href="#" class="action-button-link">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Add New Client</span>
+                        </a>
+                        <a href="#" class="action-button-link">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Record Payment</span>
+                        </a>
+                        <a href="#" class="action-button-link">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Generate Report</span>
+                        </a>
+                        <a href="#" class="action-button-link">
+                            <i class="fas fa-bell"></i>
+                            <span>Send Reminder</span>
+                        </a>
+                        <a href="#" class="action-button-link">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculate Interest</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Transactions -->
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h3><i class="fas fa-history me-2"></i>Recent Transactions</h3>
+                    </div>
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Client Name</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            R
+                                        </div>
+                                        <div>
+                                            <strong>Rajesh Kumar</strong><br>
+                                            <small class="text-muted">ID: PG001</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹500</strong></td>
+                                <td>26/06/2025</td>
+                                <td><span class="badge bg-success">Paid</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            P
+                                        </div>
+                                        <div>
+                                            <strong>Priya Sharma</strong><br>
+                                            <small class="text-muted">ID: PG002</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹750</strong></td>
+                                <td>25/06/2025</td>
+                                <td><span class="badge bg-warning">Pending</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            A
+                                        </div>
+                                        <div>
+                                            <strong>Amit Singh</strong><br>
+                                            <small class="text-muted">ID: PG003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹300</strong></td>
+                                <td>24/06/2025</td>
+                                <td><span class="badge bg-danger">Overdue</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-2">
+                                            S
+                                        </div>
+                                        <div>
+                                            <strong>Sunita Devi</strong><br>
+                                            <small class="text-muted">ID: PG004</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><strong>₹600</strong></td>
+                                <td>23/06/2025</td>
+                                <td><span class="badge bg-success">Paid</span></td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Collection Summary -->
+                <div class="profile-section mb-4">
+                    <h3><i class="fas fa-chart-bar me-2"></i>This Week Summary</h3>
+                    <div class="row text-center">
+                        <div class="col-6 mb-3">
+                            <div class="p-3 bg-light rounded">
+                                <h4 class="text-success mb-1">₹18,450</h4>
+                                <small class="text-muted">Collected</small>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="p-3 bg-light rounded">
+                                <h4 class="text-warning mb-1">₹5,200</h4>
+                                <small class="text-muted">Pending</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded">
+                                <h4 class="text-primary mb-1">156</h4>
+                                <small class="text-muted">Visits</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 bg-light rounded">
+                                <h4 class="text-info mb-1">12</h4>
+                                <small class="text-muted">New Clients</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Performers -->
+                <div class="client-ranking-section">
+                    <div class="section-header-area">
+                        <h3><i class="fas fa-star me-2"></i>Top Paying Clients</h3>
+                    </div>
+                    <div class="client-list-container">
+                        <div class="client-ranking-item">
+                            <div class="client-info-display">
+                                <div class="client-rank-badge">1</div>
+                                <div class="client-details-text">
+                                    <strong>Rajesh Kumar Gupta</strong><br>
+                                    <small class="client-category-label">Regular Saver</small>
+                                </div>
+                            </div>
+                            <span class="payment-amount-badge success-amount">₹15,000</span>
+                        </div>
+                        <div class="client-ranking-item">
+                            <div class="client-info-display">
+                                <div class="client-rank-badge">2</div>
+                                <div class="client-details-text">
+                                    <strong>Meera Patel Shah</strong><br>
+                                    <small class="client-category-label">Gold Member</small>
+                                </div>
+                            </div>
+                            <span class="payment-amount-badge warning-amount">₹12,500</span>
+                        </div>
+                        <div class="client-ranking-item">
+                            <div class="client-info-display">
+                                <div class="client-rank-badge">3</div>
+                                <div class="client-details-text">
+                                    <strong>Vikram Singh Rathore</strong><br>
+                                    <small class="client-category-label">Premium Client</small>
+                                </div>
+                            </div>
+                            <span class="payment-amount-badge info-amount">₹10,800</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Alerts Panel -->
+                <div class="alerts-notification-panel">
+                    <div class="section-header-area">
+                        <h3><i class="fas fa-exclamation-triangle me-2"></i>Important Alerts</h3>
+                    </div>
+                    <div class="alert-items-container">
+                        <div class="single-alert-item urgent-alert">
+                            <div class="alert-icon-holder">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="alert-content-text">
+                                <strong>5 Overdue Payments</strong><br>
+                                <small>Requires immediate attention</small>
+                            </div>
+                        </div>
+                        <div class="single-alert-item reminder-alert">
+                            <div class="alert-icon-holder">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="alert-content-text">
+                                <strong>18 Payment Reminders</strong><br>
+                                <small>Due in next 3 days</small>
+                            </div>
+                        </div>
+                        <div class="single-alert-item success-alert">
+                            <div class="alert-icon-holder">
+                                <i class="fas fa-user-plus"></i>
+                            </div>
+                            <div class="alert-content-text">
+                                <strong>3 New Client Registrations</strong><br>
+                                <small>Pending verification</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Demographics Display -->
+                <div class="client-demographics-panel">
+                    <div class="section-header-area">
+                        <h3><i class="fas fa-users me-2"></i>Client Demographics</h3>
+                    </div>
+                    <div class="demographics-content-area">
+                        <div class="demographic-category-item">
+                            <div class="category-label-text">Age Group</div>
+                            <div class="demographic-breakdown">
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">18-30</span>
+                                    <span class="breakdown-value">24%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">31-45</span>
+                                    <span class="breakdown-value">42%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">46-60</span>
+                                    <span class="breakdown-value">34%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demographic-category-item">
+                            <div class="category-label-text">Payment Method</div>
+                            <div class="demographic-breakdown">
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Cash</span>
+                                    <span class="breakdown-value">56%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Digital</span>
+                                    <span class="breakdown-value">34%</span>
+                                </div>
+                                <div class="breakdown-item">
+                                    <span class="breakdown-label">Bank Transfer</span>
+                                    <span class="breakdown-value">10%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .avatar-sm {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
+

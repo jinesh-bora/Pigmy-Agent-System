@@ -1,0 +1,340 @@
+/* Pigmy Agent System - Dashboard CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+.navbar {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 10px 15px !important;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255,255,255,0.3);
+    font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+    padding: 30px;
+    min-height: calc(100vh - 56px);
+}
+
+.page-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* Cards */
+.stats-card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.stats-card .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.stats-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.stats-label {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.stats-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+/* Authentication Pages */
+.auth-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-header {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.auth-header h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.auth-body {
+    padding: 2.5rem;
+}
+
+.form-control {
+    border: 2px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    outline: none;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Tables */
+.table-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.table thead th {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.table tbody td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f2f6;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Profile Page */
+.profile-section {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #667eea;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-info h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Settings Page */
+.settings-section {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.settings-section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f2f6;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Badges */
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.badge.bg-success {
+    background-color: #27ae60 !important;
+}
+
+.badge.bg-warning {
+    background-color: #f39c12 !important;
+}
+
+.badge.bg-danger {
+    background-color: #e74c3c !important;
+}
+
+/* Dashboard specific */
+.welcome-section {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.quick-actions h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.action-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .stats-number {
+        font-size: 2rem;
+    }
+    
+    .auth-body {
+        padding: 1.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+    }
+}

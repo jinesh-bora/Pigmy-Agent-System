@@ -1,0 +1,169 @@
+/* Custom CSS for Pigmy-Agent-System Dashboard */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: var(--primary-color);
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.main-content {
+    padding: 30px;
+}
+
+.stats-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+.stats-card .card-body {
+    padding: 2rem;
+}
+
+.stats-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.login-container, .signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.auth-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.auth-header {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.auth-body {
+    padding: 2.5rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.table-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px;
+}
+
+.table td {
+    padding: 15px;
+    border-color: #e9ecef;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    object-fit: cover;
+}
+
+.settings-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+    }
+    
+    .main-content {
+        padding: 15px;
+    }
+    
+    .auth-body {
+        padding: 1.5rem;
+    }
+}
